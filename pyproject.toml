@@ -26,7 +26,13 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [
+  "geopandas",
+  "networkx",
+  "numpy",
+  "pydantic",
+  "shapely",
+]
 
 [project.urls]
 Documentation = "https://digital-fracture.github.io/codd-street-graph"
