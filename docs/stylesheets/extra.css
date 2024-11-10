@@ -1,0 +1,17 @@
+.md-typeset .example > summary {
+    background-color: var(--md-accent-fg-color--transparent);
+}
+.md-typeset details.example {
+    border-color: var(--md-accent-fg-color);
+}
+.md-typeset .example > summary::before {
+    background-color: var(--md-accent-fg-color);
+}
+.md-typeset .example > summary::after {
+    color: var(--md-accent-fg-color);
+}
+
+
+.excel {
+    color: var(--md-primary-fg-color);
+}

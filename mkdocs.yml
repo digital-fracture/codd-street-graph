@@ -1,0 +1,56 @@
+site_name: CODD Street Graph
+site_author: KruASe
+
+repo_name: digital-fracture/codd-street-graph
+repo_url: https://github.com/digital-fracture/codd-street-graph
+
+copyright: Copyright &copy; 2024 digital-fracture
+
+theme:
+    name: material
+    features:
+        - content.code.copy
+        - content.code.select
+        - content.code.annotate
+        - navigation.instant
+    palette:
+        scheme: slate
+        primary: deep purple
+        accent: orange
+    font:
+        text: Inter
+        code: JetBrains Mono
+    language: en
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - pymdownx.highlight:
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - toc:
+          permalink: true
+
+plugins:
+    - mkdocstrings:
+          handlers:
+              python:
+                  paths: [src]
+                  options:
+                      heading_level: 3
+                      show_root_heading: true
+                      show_root_full_path: false
+                      show_signature_annotations: true
+                      show_if_no_docstring: true
+                      merge_init_into_class: true
+                      docstring_section_style: list
+                      members_order: source
+
+extra_css:
+    - stylesheets/extra.css
